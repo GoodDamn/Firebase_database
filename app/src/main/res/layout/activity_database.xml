@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/database_constrLayout">
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_logout"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        app:layout_constraintStart_toStartOf="@+id/editText_typeData_name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/imageView_logout"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/icon_logout"/>
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="-2dp"
+            android:fontFamily="@font/rambla_bold"
+            android:text="Выйти"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_logout"
+            app:layout_constraintStart_toEndOf="@+id/imageView_logout"
+            app:layout_constraintTop_toTopOf="@+id/imageView_logout" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editText_typeData_name"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/edittext_style"
+        android:digits="ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+        android:fontFamily="@font/rambla_bold"
+        android:hint="ФИО"
+        android:inputType="textFilter"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_typeData_age"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_style"
+        android:fontFamily="@font/rambla_bold"
+        android:hint="Возраст"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_typeData_name" />
+
+    <EditText
+        android:id="@+id/editText_typeData_number"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_style"
+        android:fontFamily="@font/rambla_bold"
+        android:inputType="number"
+        android:hint="Номер в гостинице"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_typeData_age" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/rambla_bold"
+        android:text="Пол"
+        app:layout_constraintEnd_toEndOf="@+id/editText_typeData_number"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="@+id/editText_typeData_number"
+        app:layout_constraintTop_toBottomOf="@+id/editText_typeData_number" />
+
+    <CheckBox
+        android:id="@+id/checkbox_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Мужской"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_database"
+        android:visibility="invisible"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_data"
+        app:layout_constraintEnd_toEndOf="@+id/editText_typeData_number"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_male"
+        app:layout_constraintTop_toBottomOf="@+id/editText_typeData_number" />
+
+    <CheckBox
+        android:id="@+id/checkbox_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Женский"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_male" />
+
+    <Button
+        android:id="@+id/btn_add_data"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/rambla_bold"
+        android:text="Внести данные"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_female" />
+
+    <Button
+        android:id="@+id/btn_clear_fields"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/rambla_bold"
+        android:text="Очистить поля"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toEndOf="@+id/relativelayout_logout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_show_information"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/rambla_bold"
+        android:text="Показать информацию"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_data" />
+
+    <ListView
+        android:id="@+id/listView_info"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_information" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

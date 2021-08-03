@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "946364208229",
+    "firebase_url": "https://itfest-b4031-default-rtdb.firebaseio.com",
+    "project_id": "itfest-b4031",
+    "storage_bucket": "itfest-b4031.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946364208229:android:688dfb02f67cceaef4a28c",
+        "android_client_info": {
+          "package_name": "com.spok.database"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946364208229-4m8qu4nfqd32js50123h5aj8u2lctde1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spok.database",
+            "certificate_hash": "950c9e09308d76cadead28b0f057ef1e047da405"
+          }
+        },
+        {
+          "client_id": "946364208229-h51qr3dsrllf97rorink96vs17tgcmtu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALGmbebL8m9eqAY30HDT-NKIDIGmnPiu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946364208229-h51qr3dsrllf97rorink96vs17tgcmtu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

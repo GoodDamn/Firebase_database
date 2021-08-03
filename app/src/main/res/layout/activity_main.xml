@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/main_constrLayout">
+
+    <EditText
+        android:id="@+id/editText_nickname"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/rambla_bold"
+        android:gravity="center"
+        android:background="@drawable/edittext_style"
+        android:hint="Введите никнейм"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:drawableStart="@drawable/change_icon_nickname"
+        android:textColorHint="#8A787272"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/rambla_bold"
+        android:gravity="center"
+        android:hint="Пароль"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/edittext_style"
+        android:drawableStart="@drawable/change_icon_password"
+        android:textColorHint="#8A787272"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_nickname"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/rambla_bold"
+        android:text="Войти"
+        android:textAllCaps="false"
+        android:textColor="#C9505155"
+        app:layout_constraintEnd_toEndOf="@+id/editText_password"
+        app:layout_constraintStart_toStartOf="@+id/editText_password"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password" />
+
+    <TextView
+        android:id="@+id/textView_signIn"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/rambla"
+        android:gravity="center"
+        android:text="Нет аккаунта? Зарегистрироваться."
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="invisible"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_login"
+        app:layout_constraintTop_toTopOf="@+id/btn_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
